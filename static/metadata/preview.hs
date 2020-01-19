@@ -1,0 +1,22 @@
+[ ( "#academic-service" , ( 768 , 768 ) )
+, ( "#capstone-bindings-for-ocaml" , ( 768 , 768 ) )
+, ( "#open-source" , ( 768 , 768 ) )
+, ( "#ph.d.supervision" , ( 768 , 768 ) )
+, ( "#research" , ( 768 , 768 ) )
+, ( "#research-interests" , ( 768 , 768 ) )
+, ( "#section" , ( 768 , 768 ) )
+, ( "#section-1" , ( 768 , 768 ) )
+, ( "#section-2" , ( 768 , 768 ) )
+, ( "#unicorn-bindings-for-ocaml" , ( 768 , 768 ) )
+, ( "https://github.com/xorpse/capstone-ocaml" , ( 768 , 768 ) )
+, ( "https://github.com/xorpse/unicorn-ocaml" , ( 768 , 768 ) )
+, ( "static/papers/dimva17-humidify.pdf" , ( 768 , 594 ) )
+, ( "static/papers/esorics17-stringer.pdf" , ( 768 , 594 ) )
+, ( "static/papers/raid18-backdoors.pdf" , ( 768 , 594 ) )
+, ( "static/slides/2017-07-07-humidify-dimva17.pdf"
+  , ( 432 , 768 )
+  )
+, ( "static/slides/2017-09-13-stringer-esorics17.pdf"
+  , ( 576 , 768 )
+  )
+]
