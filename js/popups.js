@@ -1,5 +1,5 @@
 Extracts = {
-    baseURL: "http://localhost:8000",
+    baseURL: "https://xv.ax",
     popupStylesID: "popups-styles",
     popupContainerID: "popup-container",
     popupContainerParentSelector: "html",
