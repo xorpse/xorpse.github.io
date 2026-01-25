@@ -11,14 +11,14 @@ XV.AX | Parascope
 </span></code></pre><p>Scan the C source code in the given directory and stream rule matches to results.jsonl:<pre style=color:#6c7079;background-color:#2b303b><code><span style=color:#abb2bf>parascope -m c -o results.jsonl -r rules /directory/of/source-code
 </span></code></pre><p>Complete set of capabilities:<pre class=language-sh data-lang=sh style=color:#6c7079;background-color:#2b303b><code class=language-sh data-lang=sh><span style=color:#eb6772>Weggli</span><span style=color:#abb2bf> ruleset scanner for source code and binaries
 </span><span style=color:#abb2bf>
-</span><span style=color:#eb6772>Usage:</span><span style=color:#abb2bf> parascope </span><span style=color:#cd74e8>[</span><span style=color:#abb2bf>OPTIONS</span><span style=color:#cd74e8>]</span><span style=color:#eb6772> --rules </span><span style=color:#adb7c9>&lt;</span><span style=color:#abb2bf>rules</span><span style=color:#adb7c9>> &lt;</span><span style=color:#abb2bf>INPUT</span><span style=color:#adb7c9>>
+</span><span style=color:#eb6772>Usage:</span><span style=color:#abb2bf> parascope </span><span style=color:#cd74e8>[</span><span style=color:#abb2bf>OPTIONS</span><span style=color:#cd74e8>]</span><span style=color:#eb6772> --rules </span><span style=color:#adb7c9><</span><span style=color:#abb2bf>rules</span><span style=color:#adb7c9>> <</span><span style=color:#abb2bf>INPUT</span><span style=color:#adb7c9>>
 </span><span style=color:#abb2bf>
 </span><span style=color:#eb6772>Arguments:
-</span><span style=color:#abb2bf>  </span><span style=color:#adb7c9>&lt;</span><span style=color:#abb2bf>INPUT</span><span style=color:#adb7c9>>
+</span><span style=color:#abb2bf>  </span><span style=color:#adb7c9><</span><span style=color:#abb2bf>INPUT</span><span style=color:#adb7c9>>
 </span><span style=color:#abb2bf>          </span><span style=color:#eb6772>File</span><span style=color:#abb2bf> or directory to scan
 </span><span style=color:#abb2bf>
 </span><span style=color:#eb6772>Options:
-</span><span style=color:#abb2bf>  </span><span style=color:#eb6772>-m, --mode </span><span style=color:#adb7c9>&lt;</span><span style=color:#abb2bf>mode</span><span style=color:#adb7c9>>
+</span><span style=color:#abb2bf>  </span><span style=color:#eb6772>-m, --mode </span><span style=color:#adb7c9><</span><span style=color:#abb2bf>mode</span><span style=color:#adb7c9>>
 </span><span style=color:#abb2bf>          </span><span style=color:#eb6772>Analysis</span><span style=color:#abb2bf> mode
 </span><span style=color:#abb2bf>
 </span><span style=color:#abb2bf>          </span><span style=color:#eb6772>[default:</span><span style=color:#abb2bf> binary]
@@ -28,7 +28,7 @@ XV.AX | Parascope
 </span><span style=color:#abb2bf>          </span><span style=color:#eb6772>-</span><span style=color:#abb2bf> c:      Source code analysis mode (C)
 </span><span style=color:#abb2bf>          </span><span style=color:#eb6772>-</span><span style=color:#abb2bf> cxx:    Source code analysis mode (C++)
 </span><span style=color:#abb2bf>
-</span><span style=color:#abb2bf>      </span><span style=color:#eb6772>--path-filter </span><span style=color:#cd74e8>[</span><span style=color:#abb2bf>&lt;path</span><span style=color:#adb7c9>-</span><span style=color:#abb2bf>filter>...</span><span style=color:#cd74e8>]
+</span><span style=color:#abb2bf>      </span><span style=color:#eb6772>--path-filter </span><span style=color:#cd74e8>[</span><span style=color:#abb2bf>&LTpath</span><span style=color:#adb7c9>-</span><span style=color:#abb2bf>filter>...</span><span style=color:#cd74e8>]
 </span><span style=color:#abb2bf>          </span><span style=color:#eb6772>Restrict</span><span style=color:#abb2bf> analysis to files matching the given regular expression.
 </span><span style=color:#abb2bf>          </span><span style=color:#eb6772>For</span><span style=color:#abb2bf> C/C++ analysis if no path filters are given analysis is restricted
 </span><span style=color:#abb2bf>          </span><span style=color:#eb6772>to</span><span style=color:#abb2bf> a set of default file extensions:
@@ -43,7 +43,7 @@ XV.AX | Parascope
 </span><span style=color:#abb2bf>      </span><span style=color:#eb6772>--display
 </span><span style=color:#abb2bf>          </span><span style=color:#eb6772>Render</span><span style=color:#abb2bf> matches to stdout
 </span><span style=color:#abb2bf>
-</span><span style=color:#abb2bf>      </span><span style=color:#eb6772>--display-context </span><span style=color:#adb7c9>&lt;</span><span style=color:#abb2bf>display-context</span><span style=color:#adb7c9>>
+</span><span style=color:#abb2bf>      </span><span style=color:#eb6772>--display-context </span><span style=color:#adb7c9><</span><span style=color:#abb2bf>display-context</span><span style=color:#adb7c9>>
 </span><span style=color:#abb2bf>          </span><span style=color:#eb6772>Number</span><span style=color:#abb2bf> of lines before/after match to render
 </span><span style=color:#abb2bf>
 </span><span style=color:#abb2bf>          </span><span style=color:#eb6772>[default:</span><span style=color:#abb2bf> 5]
@@ -51,10 +51,10 @@ XV.AX | Parascope
 </span><span style=color:#abb2bf>      </span><span style=color:#eb6772>--summary
 </span><span style=color:#abb2bf>          </span><span style=color:#eb6772>Render</span><span style=color:#abb2bf> tabular summary to stdout
 </span><span style=color:#abb2bf>
-</span><span style=color:#abb2bf>  </span><span style=color:#eb6772>-r, --rules </span><span style=color:#adb7c9>&lt;</span><span style=color:#abb2bf>rules</span><span style=color:#adb7c9>>
+</span><span style=color:#abb2bf>  </span><span style=color:#eb6772>-r, --rules </span><span style=color:#adb7c9><</span><span style=color:#abb2bf>rules</span><span style=color:#adb7c9>>
 </span><span style=color:#abb2bf>          </span><span style=color:#eb6772>File</span><span style=color:#abb2bf> or directory containing wegglir rules
 </span><span style=color:#abb2bf>
-</span><span style=color:#abb2bf>  </span><span style=color:#eb6772>-o, --output </span><span style=color:#adb7c9>&lt;</span><span style=color:#abb2bf>OUTPUT</span><span style=color:#adb7c9>>
+</span><span style=color:#abb2bf>  </span><span style=color:#eb6772>-o, --output </span><span style=color:#adb7c9><</span><span style=color:#abb2bf>OUTPUT</span><span style=color:#adb7c9>>
 </span><span style=color:#abb2bf>          </span><span style=color:#eb6772>File</span><span style=color:#abb2bf> to write output results (JSONL)
 </span><span style=color:#abb2bf>
 </span><span style=color:#abb2bf>  </span><span style=color:#eb6772>-h, --help
